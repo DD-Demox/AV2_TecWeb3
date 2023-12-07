@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nome</th>
+            <th>origem</th>
+            <th>descrição</th>
+            <th>temperamento</th>
+            <th>imagem</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cat of listCats">
+            <td>{{cat.id}}</td>
+            <td>{{cat.name}}</td>    
+            <td>{{cat.origin}}</td> 
+            <td>{{cat.description}}</td> 
+            <td>{{cat.temperament}}</td> 
+            <td><img src={{cat.image}}></td>   
+        </tr>
+    </tbody>
+    
+   
+  </table> 
